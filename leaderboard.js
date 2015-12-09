@@ -1,1 +1,2 @@
-console.log("Hello world");
+PlayersList = new Mongo.Collection('players');
+//console.log("Hello world");
