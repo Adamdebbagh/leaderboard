@@ -1,14 +1,24 @@
 <head>
-  <title>hello</title>
+  <title>leaderboard</title>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <h1>Leaderboard</h1>
 
-  {{> hello}}
+  {{> leaderboard}}
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<template name="leaderboard">
+    <ul>
+        {{#each player}}
+        <li class="player {{selectedClass}}">{{name}} : {{score}}</li><br>
+        {{/each}}
+        <input type="button" class="increment" value="Give 5 Points">
+        <input type="button" class="decrement" value="Take 5 Points">
+    </ul>
+
+
+
+
+
 </template>
