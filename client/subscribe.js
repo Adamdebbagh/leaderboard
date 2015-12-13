@@ -1,0 +1,4 @@
+Meteor.subscribe('thePlayers');
+
+
+
